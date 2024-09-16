@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "doki.wallpaper.path": "C:\\Users\\Dan\\Documents\\VSCODE_SETTINGS\\opacity-changed-TOTK-background.jpeg",
+    "doki.background.path": "C:\\Users\\Dan\\Documents\\VSCODE_SETTINGS\\TOTK-background.jpeg",
+    "doki.sticker.path": "C:\\Users\\Dan\\Documents\\VSCODE_SETTINGS\\zelda_shield.png"
+}

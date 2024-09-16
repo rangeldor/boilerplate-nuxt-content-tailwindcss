@@ -1,0 +1,12 @@
+<template>
+   <article class="prose dark:prose-invert max-w-none">
+    <ContentDoc path="/projects" />
+  </article>
+</template>
+
+<script lang="ts" setup>
+useHead({
+  title: 'Projects'
+})
+
+</script>

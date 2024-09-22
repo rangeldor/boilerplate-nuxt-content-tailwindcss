@@ -1,14 +1,17 @@
 <template>
   <div class="container mx-auto max-w-4xl">
-    <header class="flex justify-between items-start md:items-center mt-5">
+    <header class="mt-5 flex items-start justify-between md:items-center">
       <div class="flex items-center md:gap-8">
         <div class="hidden md:block">
-          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200 dark:hover:bg-gray-800">
+          <NuxtLink
+            to="/"
+            class="p-2 text-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-800"
+          >
             Piotr Jura
           </NuxtLink>
         </div>
-    
-        <Menu />
+
+        <MenuList />
       </div>
 
       <ClientOnly>
@@ -16,7 +19,7 @@
       </ClientOnly>
     </header>
 
-    <main class="p-2 mt-10">
+    <main class="mt-10 p-2">
       <slot />
     </main>
   </div>
@@ -42,7 +45,6 @@ useHead({
 <style>
 body {
   font-family: 'Roboto', sans-serif;
-  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300
+  @apply bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-300;
 }
-
 </style>

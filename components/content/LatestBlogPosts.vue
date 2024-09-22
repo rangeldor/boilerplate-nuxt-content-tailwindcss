@@ -11,5 +11,4 @@ import type { IBlogPostsProps } from '~/types/blog-posts'
 
 const lastBlogPostsProps = defineProps<IBlogPostsProps>()
 const { limit = null } = toRefs(lastBlogPostsProps)
-
 </script>

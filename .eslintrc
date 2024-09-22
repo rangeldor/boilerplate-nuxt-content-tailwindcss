@@ -1,0 +1,26 @@
+{
+  "plugins": ["nuxt", "prettier"], // O mesmo que "eslint-plugin-nuxt", "eslint-plugin-prettier"
+  "extends": ["@nuxt", "plugin:prettier/recommended", "prettier"], // O mesmo que "@nuxt/eslint-config", "plugin:eslint-plugin-prettier/recommended", "eslint-config-prettier"
+  "rules": {
+    "semi": ["error", "never"], // Desativa ponto e vírgula
+    "quotes": ["error", "single"], // Usa aspas simples
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "endOfLine": "auto",
+        "quoteProps": "consistent",
+        "trailingComma": "none"
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [".nuxt", ".output", "dist", "node_modules", "public"]
+}

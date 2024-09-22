@@ -14,9 +14,17 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxtjs/eslint-module',
     '@nuxt/content',
     '@nuxt/image'
   ],
+  eslint: {
+    fix: true, // Option to automatically fix lint issues
+    cache: false // Optionally disable cache if needed
+  },
+  build: {
+    transpile: ['@tailwindcss/forms'] // Exemplo, ajuste conforme necessário
+  },
   content: {
     highlight: {
       theme: {

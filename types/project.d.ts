@@ -79,7 +79,7 @@ interface IProject {
   watchers: number
   default_branch: string
 }
-  
+
 interface IOwner {
   login: string
   id: number

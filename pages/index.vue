@@ -1,5 +1,5 @@
 <template>
-  <article class="prose dark:prose-invert max-w-none">
+  <article class="prose max-w-none dark:prose-invert">
     <ContentDoc path="/" />
   </article>
 </template>
@@ -30,4 +30,4 @@ useHead({
     }
   ]
 })
-</script >
+</script>

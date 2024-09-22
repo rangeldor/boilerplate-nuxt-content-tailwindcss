@@ -1,3 +1,3 @@
 export interface IBlogPostsProps {
-    limit: number | null
+  limit: number | null
 }
